@@ -1,6 +1,6 @@
 import { HttpException, Injectable } from '@nestjs/common';
 import { DataSource, Repository } from 'typeorm';
-import { Posts as PostsEntity } from './posts.entity';
+import { Posts as PostsEntity } from '../common/entity/posts.entity';
 
 export interface IPostsRo {
   list: PostsEntity[];

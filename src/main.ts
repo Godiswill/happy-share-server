@@ -4,8 +4,8 @@ import { NestFactory } from '@nestjs/core';
 import { ValidationPipe } from '@nestjs/common';
 import { SwaggerModule, DocumentBuilder } from '@nestjs/swagger';
 import { AppModule } from './app.module';
-import { HttpExceptionFilter } from './core/filter/http-exception.filter';
-import { TransformInterceptor } from './core/interceptor/transform.interceptor';
+import { HttpExceptionFilter } from './common/filter/http-exception.filter';
+import { TransformInterceptor } from './common/interceptor/transform.interceptor';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { abortOnError: false });
